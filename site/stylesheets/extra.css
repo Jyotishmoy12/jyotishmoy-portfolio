@@ -1,0 +1,18 @@
+/* Force Mermaid node text to be black, overriding dark mode theme defaults */
+.md-typeset .mermaid .node .label,
+.md-typeset .mermaid .actor,
+.md-typeset .mermaid .messageText,
+.md-typeset .mermaid .noteText,
+.md-typeset .mermaid .labelText,
+.md-typeset .mermaid .loopText,
+.md-typeset .mermaid .edgeLabel,
+.md-typeset .mermaid text,
+.md-typeset .mermaid tspan {
+    color: #000000 !important;
+    fill: #000000 !important;
+}
+
+.md-typeset .mermaid .edgeLabel {
+    background-color: transparent !important;
+    /* Ensure edge labels have no weird dark background */
+}

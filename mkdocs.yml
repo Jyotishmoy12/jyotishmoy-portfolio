@@ -1,0 +1,79 @@
+site_name: Jyotishmoy Deka - Full Stack Engineer
+site_url: ""
+site_author: Jyotishmoy Deka
+site_description: "Portfolio of Jyotishmoy Deka, a Full Stack Engineer."
+
+theme:
+  name: material
+  favicon: material/robot-outline
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs # Top navigation tabs
+    - navigation.indexes # Clickable section headers
+    - navigation.top # Back to top button
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Experience: experience.md
+  - Projects:
+      - Overview: projects.md
+      - LeetCode Backend System: leetcode-backend.md
+      - Airbnb Booking System: airbnb-clone.md
+      - Airline Booking System: airline-booking.md
+  - Go Projects:
+      - Overview: go-projects.md
+      - Go-Torrent: go-torrent.md
+      - Go-LSM: go-lsm.md
+      - Go-SMTP Server: go-smtp.md
+      - Go-DNS Server: go-dns.md
+  - Blogs:
+      - Overview: blogs.md
+      - HTTP Message Structure: http-structure.md
+      - CDN Deep-Dive: cdn-deep-dive.md
+      - Cookies Deep-Dive: cookies-deep-dive.md
+      - OAuth 2.0 Deep-Dive: oauth-deep-dive.md
+      - Inside the .torrent File: torrent-file-structure.md
+  - Research:
+      - Overview: research.md
+      - Constrained LCS & LCStr: constrained-lcs-paper.md
+      - LCS & LCStr Algorithm: lcs-paper.md
+  - Skills & Education: skills.md
+
+extra_css:
+  - stylesheets/extra.css
