@@ -16,3 +16,25 @@
     background-color: transparent !important;
     /* Ensure edge labels have no weird dark background */
 }
+
+/* Home page buttons uniform width */
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 250px;
+    margin-top: 2rem;
+}
+
+.home-buttons .md-button {
+    width: 100%;
+    margin: 0 !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hide 'Made with Material for MkDocs' footer */
+.md-copyright {
+    display: none;
+}
