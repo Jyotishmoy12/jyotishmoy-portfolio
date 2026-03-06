@@ -2,8 +2,6 @@
 
 Below is an overview of my core technical projects.
 
-*(Note: Deeper dives and comprehensive documentation based on GitHub READMEs for each project will be added soon!)*
-
 ---
 
 
