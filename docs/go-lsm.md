@@ -46,6 +46,17 @@ To prevent "Read Amplification" (checking too many files), we built a Compaction
 - **lsm-stress:** An automated load tester to verify engine stability under pressure.
 - **lsm-dump & lsm-wal-dump:** Custom binary parsers that transform raw bytes into human-readable tables.
 
+## Interactive System Flow
+<div class="flow-visualizer-container" data-nodes='["Write Op", "WAL Log", "SkipList Mem", "SSTable Disk"]'>
+    <div class="flow-nodes">
+        <div class="flow-packet"></div>
+    </div>
+    <div class="flow-controls">
+        <button class="md-button md-button--primary flow-btn trace-btn">Trace Request</button>
+        <button class="md-button flow-btn reset-btn">Reset</button>
+    </div>
+</div>
+
 ---
 
 ## How We Built It: Step-by-Step Evolution

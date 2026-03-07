@@ -20,6 +20,17 @@ Leetcode is a scalable, microservices-based coding platform backend. It features
 - **Multi-language Support**: Python (2s timeout) and C++ (1s timeout).
 - **Comprehensive Results**: Detailed test case evaluation (AC, WA, TLE).
 
+## Interactive System Flow
+<div class="flow-visualizer-container" data-nodes='["User", "Submission API", "Redis/BullMQ", "Eval Worker", "Docker Isolator"]'>
+    <div class="flow-nodes">
+        <div class="flow-packet"></div>
+    </div>
+    <div class="flow-controls">
+        <button class="md-button md-button--primary flow-btn trace-btn">Trace Request</button>
+        <button class="md-button flow-btn reset-btn">Reset</button>
+    </div>
+</div>
+
 ## System Architecture
 
 The system consists of three core microservices working in harmony:

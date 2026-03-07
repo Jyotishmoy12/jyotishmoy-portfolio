@@ -22,6 +22,17 @@ A scalable airline booking system built with microservices architecture, featuri
 - **Automated Cleanup**: Cron jobs for unconfirmed booking management.
 - **Idempotent APIs**: Prevention of duplicate booking submissions via `x-idempotency-key`.
 
+## Interactive System Flow
+<div class="flow-visualizer-container" data-nodes='["Passenger", "Flight API", "Seat Allocation", "Payment Svc", "MySQL DB"]'>
+    <div class="flow-nodes">
+        <div class="flow-packet"></div>
+    </div>
+    <div class="flow-controls">
+        <button class="md-button md-button--primary flow-btn trace-btn">Trace Request</button>
+        <button class="md-button flow-btn reset-btn">Reset</button>
+    </div>
+</div>
+
 ## System Architecture
 
 The system consists of **two dedicated microservices**:

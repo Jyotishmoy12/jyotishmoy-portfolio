@@ -4,6 +4,19 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jyotishmoy-deka-6871b9229/) 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jyotishmoy12) 
 
+<div id="terminal-container">
+    <div id="terminal-header">
+        <span id="terminal-title">bash — 80x24</span>
+        <span id="terminal-close" title="Close Terminal">×</span>
+    </div>
+    <div id="terminal-output"></div>
+    <div class="terminal-input-container">
+        <span class="prompt">jyotishmoy@portfolio:~$</span>
+        <input type="text" id="terminal-input" autofocus spellcheck="false">
+    </div>
+</div>
+<button id="terminal-reopen">_ reopen terminal</button>
+
 ---
 
 ## About Me

@@ -25,6 +25,17 @@ Override any domain using `config.json` for local development, network-wide ad-b
 ### 5. Hot-Safe Concurrency
 The server handles thousands of concurrent requests using goroutines. Thread safety is guaranteed using `sync.RWMutex` for config and `sync.Map` for caching.
 
+## Interactive System Flow
+<div class="flow-visualizer-container" data-nodes='["UDP Query", "Cache Hit?", "Root/TLD Iteration", "UDP Response"]'>
+    <div class="flow-nodes">
+        <div class="flow-packet"></div>
+    </div>
+    <div class="flow-controls">
+        <button class="md-button md-button--primary flow-btn trace-btn">Trace Request</button>
+        <button class="md-button flow-btn reset-btn">Reset</button>
+    </div>
+</div>
+
 ---
 
 ## Architecture

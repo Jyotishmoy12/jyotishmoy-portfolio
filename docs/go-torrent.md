@@ -46,3 +46,14 @@ graph TD
 
 ### Worker Pool Architecture
 - Built a non-blocking worker pool to solve the "slow peer problem" where slow connections bottleneck the entire download.
+
+## Interactive System Flow
+<div class="flow-visualizer-container" data-nodes='["Magnet Link", "HTTP/UDP Tracker", "Peer Swarm Swarm", "Disk Buffer"]'>
+    <div class="flow-nodes">
+        <div class="flow-packet"></div>
+    </div>
+    <div class="flow-controls">
+        <button class="md-button md-button--primary flow-btn trace-btn">Trace Request</button>
+        <button class="md-button flow-btn reset-btn">Reset</button>
+    </div>
+</div>

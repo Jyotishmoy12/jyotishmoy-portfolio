@@ -1,36 +1,25 @@
 # Projects
 
-Below is an overview of my core technical projects.
+A comprehensive overview of my technical projects, categorized by primary technology stack.
 
 ---
 
+<div class="projects-hub">
+    <div class="project-category">
+        <h3>Javascript & Web Projects</h3>
+        <p>Full-stack applications built with Node.js, TypeScript, React, and modern web technologies.</p>
+        <a href="../javascript-projects/" class="md-button md-button--primary">View Javascript Projects</a>
+    </div>
 
-## LeetCode Backend System
+    <hr>
 
-**ExpressJs, TypeScript, NodeJs, MongoDB, Redis, Docker** | Sep 2025
-
-A production-ready, backend coding platform that enables users to solve algorithmic problems with real-time code evaluation across multiple programming languages.
-
-[Read Case Study](leetcode-backend.md){ .md-button }
-
----
-
-## Airbnb Booking System
-
-**ExpressJs, TypeScript, NodeJs, MySQL, Redis, Zod, Golang** | Aug 2025 – Sep 2025
-
-A production-ready, microservices-based Airbnb clone featuring hotel management through booking operations and notification services. Built with modern technologies for scalable deployment.
-
-[Read Case Study](airbnb-clone.md){ .md-button }
+    <div class="project-category">
+        <h3>Go & Systems Engineering</h3>
+        <p>High-performance systems, network protocols, and storage engines built with Golang.</p>
+        <a href="../go-projects/" class="md-button md-button--primary">View Go Projects</a>
+    </div>
+</div>
 
 ---
 
-## Airline Booking System
-
-**ExpressJs, NodeJs, MySQL, Sequelize ORM** | Jul 2025 – Aug 2025
-
-A scalable airline booking system featuring comprehensive flight data management, real-time seat availability, and secure booking transactions with automated cleanup processes.
-
-[Read Case Study](airline-booking.md){ .md-button }
-
----
+[Back to Home](../index.md){ .md-button }

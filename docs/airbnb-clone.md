@@ -20,6 +20,17 @@ A production-ready, microservices-based Airbnb clone featuring hotel management 
 - **Idempotency**: Built idempotent APIs to prevent duplicate payments.
 - **High Throughput**: Integrated a Golang API gateway to proxy requests with low-latency routing.
 
+## Interactive System Flow
+<div class="flow-visualizer-container" data-nodes='["Guest", "API Gateway", "Auth Service", "Booking Engine", "MySQL Cluster"]'>
+    <div class="flow-nodes">
+        <div class="flow-packet"></div>
+    </div>
+    <div class="flow-controls">
+        <button class="md-button md-button--primary flow-btn trace-btn">Trace Request</button>
+        <button class="md-button flow-btn reset-btn">Reset</button>
+    </div>
+</div>
+
 ## System Architecture
 
 ```mermaid

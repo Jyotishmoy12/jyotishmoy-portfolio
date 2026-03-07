@@ -12,7 +12,7 @@ The Longest Common Subsequence (LCS) and Longest Common Substring (LCStr) proble
 
 ## Read the Full Paper
 
-<iframe src="http://www.researchmathsci.org/JMIart/JMI-v25-8.pdf" width="100%" height="600px" style="border: none;"></iframe>
+<iframe src="https://drive.google.com/file/d/1HFN0cz02_2y8nhcCMt1A5VHj5K6p7vMQ/preview" width="100%" height="600px" style="border: none;"></iframe>
 
 ---
 
