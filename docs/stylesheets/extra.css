@@ -1,4 +1,48 @@
-/* Force Mermaid node text to be black, overriding dark mode theme defaults */
+:root {
+    /* Dracula Palette */
+    --dracula-bg: #282a36;
+    --dracula-fg: #f8f8f2;
+    --dracula-cur: #44475a;
+    --dracula-com: #6272a4;
+    --dracula-cya: #8be9fd;
+    --dracula-gre: #50fa7b;
+    --dracula-ora: #ffb86c;
+    --dracula-pin: #ff79c6;
+    --dracula-pur: #bd93f9;
+    --dracula-red: #ff5555;
+    --dracula-yel: #f1fa8c;
+
+    /* MkDocs Overrides */
+    --md-primary-fg-color: var(--dracula-pur);
+    --md-primary-fg-color--light: var(--dracula-pur);
+    --md-primary-fg-color--dark: var(--dracula-pur);
+    --md-accent-fg-color: var(--dracula-pin);
+
+    --md-default-bg-color: var(--dracula-bg);
+    --md-default-fg-color: var(--dracula-fg);
+    --md-default-fg-color--light: var(--dracula-com);
+
+    --md-code-bg-color: var(--dracula-cur);
+    --md-code-fg-color: var(--dracula-fg);
+
+    --md-footer-bg-color: #191a21;
+    --md-footer-bg-color--dark: #191a21;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--dracula-bg);
+}
+
+.md-header {
+    background-color: #191a21 !important;
+}
+
+.md-tabs {
+    background-color: #191a21 !important;
+}
+
+/* Fix Mermaid node text for Dracula */
 .md-typeset .mermaid .node .label,
 .md-typeset .mermaid .actor,
 .md-typeset .mermaid .messageText,
@@ -8,13 +52,22 @@
 .md-typeset .mermaid .edgeLabel,
 .md-typeset .mermaid text,
 .md-typeset .mermaid tspan {
-    color: #000000 !important;
-    fill: #000000 !important;
+    color: var(--dracula-bg) !important;
+    fill: var(--dracula-bg) !important;
+    font-weight: 600;
 }
 
-.md-typeset .mermaid .edgeLabel {
-    background-color: transparent !important;
-    /* Ensure edge labels have no weird dark background */
+/* Mermaid Shapes Contrast */
+.md-typeset .mermaid .node rect,
+.md-typeset .mermaid .node circle,
+.md-typeset .mermaid .node polygon,
+.md-typeset .mermaid .node path {
+    fill: var(--dracula-cya) !important;
+    stroke: var(--dracula-pur) !important;
+}
+
+.md-typeset .mermaid .edgePath .path {
+    stroke: var(--dracula-pin) !important;
 }
 
 /* Home page buttons uniform width */
@@ -32,6 +85,23 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Home page buttons Dracula style */
+.home-buttons .md-button--primary {
+    background-color: var(--dracula-pur) !important;
+    border-color: var(--dracula-pur) !important;
+    color: var(--dracula-bg) !important;
+}
+
+.home-buttons .md-button {
+    border-color: var(--dracula-pin) !important;
+    color: var(--dracula-pin) !important;
+}
+
+.home-buttons .md-button:hover {
+    background-color: var(--dracula-cur) !important;
+    opacity: 0.9;
 }
 
 /* Hide 'Made with Material for MkDocs' footer */

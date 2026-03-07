@@ -7,28 +7,21 @@ theme:
   name: material
   favicon: material/robot-outline
   palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
+    # Dracula is dark by default, but we'll stick to a single slate scheme
+    - scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Dracula Mode
   features:
-    - navigation.tabs # Top navigation tabs
-    - navigation.indexes # Clickable section headers
-    - navigation.top # Back to top button
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
     - search.suggest
     - search.highlight
+    - content.code.copy
 
 markdown_extensions:
   - admonition
