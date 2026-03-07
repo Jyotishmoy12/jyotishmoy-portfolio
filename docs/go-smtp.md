@@ -35,6 +35,17 @@ Instead of waiting for an entire email to arrive, the server processes a continu
 - **Stream Scanning:** Uses `bufio.NewScanner` to split input at `\r\n` (CRLF).
 - **Memory Management:** During the `DATA` phase, it utilizes `strings.Builder` to accumulate message data efficiently, avoiding repeated string reallocation.
 
+## Interactive System Flow
+<div class="flow-visualizer-container" data-nodes='["MAIL FROM", "FSM Validator", "TCP Buffer", "Gmail Relay"]'>
+    <div class="flow-nodes">
+        <div class="flow-packet"></div>
+    </div>
+    <div class="flow-controls">
+        <button class="md-button md-button--primary flow-btn trace-btn">Trace Request</button>
+        <button class="md-button flow-btn reset-btn">Reset</button>
+    </div>
+</div>
+
 ---
 
 ## Technical Specifications

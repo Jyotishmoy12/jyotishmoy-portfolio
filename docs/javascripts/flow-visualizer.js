@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (isAnimating) return;
             nodeElements.forEach(el => el.classList.remove("active"));
             packet.style.display = "none";
-            packet.style.left = "0";
         }
 
         traceBtn.addEventListener("click", animateFlow);

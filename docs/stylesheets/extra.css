@@ -335,7 +335,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .flow-nodes {
@@ -348,11 +348,14 @@ h3 {
 }
 
 .flow-node {
+    position: relative;
+    /* Fixed: allows absolute positioning of label relative to node */
     background: #44475a;
     color: #f8f8f2;
     padding: 0.6rem 1rem;
     border-radius: 6px;
-    font-size: 0.5rem !important;
+    font-size: 0.6rem !important;
+    /* Slightly increased for readability */
     font-weight: bold;
     z-index: 2;
     border: 1px solid transparent;
@@ -372,15 +375,16 @@ h3 {
     height: 2px;
     background: #44475a;
     top: 50%;
-    left: 10%;
-    right: 10%;
+    left: 5%;
+    right: 5%;
     z-index: 1;
+    transform: translateY(-50%);
 }
 
 .flow-packet {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background: #50fa7b;
     border-radius: 50%;
     top: 50%;
@@ -388,7 +392,7 @@ h3 {
     transform: translate(-50%, -50%);
     z-index: 3;
     display: none;
-    box-shadow: 0 0 10px #50fa7b;
+    box-shadow: 0 0 12px #50fa7b;
 }
 
 .flow-controls {
@@ -397,19 +401,43 @@ h3 {
 }
 
 .flow-btn {
-    font-size: 0.45rem !important;
-    padding: 0.3rem 0.8rem !important;
+    font-size: 0.55rem !important;
+    padding: 0.4rem 1rem !important;
     margin: 0 !important;
 }
 
 .flow-label {
     position: absolute;
-    bottom: -1.2rem;
+    bottom: -1.8rem;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
     color: #6272a4;
-    font-size: 0.35rem;
+    font-size: 0.45rem;
+}
+
+/* Mobile Responsiveness for Flow Visualizer */
+@media (max-width: 768px) {
+    .flow-nodes {
+        flex-direction: column;
+        gap: 3.5rem;
+        /* Space between vertical nodes */
+        padding: 1rem 0;
+    }
+
+    .flow-connector {
+        width: 2px;
+        height: auto;
+        top: 5%;
+        bottom: 5%;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    .flow-label {
+        font-size: 0.5rem;
+    }
 }
 
 
