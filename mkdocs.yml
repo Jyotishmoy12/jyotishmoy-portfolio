@@ -55,6 +55,7 @@ nav:
   - Projects:
       - Projects Overview: projects.md
       - Javascript Projects:
+
           - Overview: javascript-projects.md
           - LeetCode Backend System: leetcode-backend.md
           - Airbnb Booking System: airbnb-clone.md
@@ -76,6 +77,7 @@ nav:
       - Overview: research.md
       - Constrained LCS & LCStr: constrained-lcs-paper.md
       - LCS & LCStr Algorithm: lcs-paper.md
+  - Skills & Education: skills.md
 copyright: |
   &copy; 2026 Jyotishmoy Deka. 
   <br>

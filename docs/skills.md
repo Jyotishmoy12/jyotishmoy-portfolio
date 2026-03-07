@@ -19,12 +19,12 @@ I am a continuous learner with a broad technical foundation, ranging from low-le
 ### Tools & Infrastructure
 - **Cloud**: AWS (EC2, S3, Lambda), Firebase
 - **DevOps**: Docker, Git, GitHub Actions, GitLab CI/CD
-- **Monitoring**: Prometheus, Grafana, ELK Stack
+- **Monitoring**: Prometheus, Grafana
 
 ### Databases & Caching
 - **Relational**: PostgreSQL, MySQL, SQLite
 - **NoSQL**: MongoDB, Redis
-- **Message Queues**: BullMQ, RabbitMQ
+- **Message Queues**: BullMQ
 
 ---
 
