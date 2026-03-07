@@ -1,4 +1,4 @@
-:root {
+[data-md-color-scheme="slate"] {
     /* Dracula Palette */
     --dracula-bg: #282a36;
     --dracula-fg: #f8f8f2;
@@ -29,44 +29,99 @@
     --md-footer-bg-color--dark: #191a21;
 }
 
-/* Base Styles */
-body {
-    background-color: var(--dracula-bg);
+:root {
+    --md-typeset-font-size: 0.45rem;
 }
 
-.md-header {
+body {
+    font-size: 0.45rem !important;
+    line-height: 1.3 !important;
+}
+
+h1 {
+    font-size: 1.15rem !important;
+    margin-top: 0.8rem !important;
+    margin-bottom: 0.4rem !important;
+}
+
+h2 {
+    font-size: 1.0rem !important;
+    margin-top: 0.6rem !important;
+    margin-bottom: 0.3rem !important;
+}
+
+h3 {
+    font-size: 0.9rem !important;
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.2rem !important;
+}
+
+/* Restore readability to navigation and sidebars */
+.md-nav {
+    font-size: 0.6rem !important;
+}
+
+.md-nav--secondary {
+    font-size: 0.55rem !important;
+}
+
+.md-nav__title {
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+}
+
+.md-search-result__meta {
+    font-size: 0.38rem !important;
+}
+
+.md-footer-meta {
+    font-size: 0.38rem !important;
+}
+
+.md-typeset code {
+    font-size: 0.38rem !important;
+}
+
+/* Code blocks can feel very large */
+
+/* Base Styles - Material handles background based on palette */
+/* body {
+    background-color: var(--dracula-bg);
+} */
+
+[data-md-color-scheme="slate"] .md-header {
     background-color: #191a21 !important;
 }
 
-.md-tabs {
+[data-md-color-scheme="slate"] .md-tabs {
     background-color: #191a21 !important;
 }
 
 /* Fix Mermaid node text for Dracula */
-.md-typeset .mermaid .node .label,
-.md-typeset .mermaid .actor,
-.md-typeset .mermaid .messageText,
-.md-typeset .mermaid .noteText,
-.md-typeset .mermaid .labelText,
-.md-typeset .mermaid .loopText,
-.md-typeset .mermaid .edgeLabel,
-.md-typeset .mermaid text,
-.md-typeset .mermaid tspan {
+[data-md-color-scheme="slate"] .md-typeset .mermaid .node .label,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .actor,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .messageText,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .noteText,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .labelText,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .loopText,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .edgeLabel,
+[data-md-color-scheme="slate"] .md-typeset .mermaid text,
+[data-md-color-scheme="slate"] .md-typeset .mermaid tspan {
     color: var(--dracula-bg) !important;
     fill: var(--dracula-bg) !important;
     font-weight: 600;
 }
 
 /* Mermaid Shapes Contrast */
-.md-typeset .mermaid .node rect,
-.md-typeset .mermaid .node circle,
-.md-typeset .mermaid .node polygon,
-.md-typeset .mermaid .node path {
+[data-md-color-scheme="slate"] .md-typeset .mermaid .node rect,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .node circle,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .node polygon,
+[data-md-color-scheme="slate"] .md-typeset .mermaid .node path {
     fill: var(--dracula-cya) !important;
     stroke: var(--dracula-pur) !important;
 }
 
-.md-typeset .mermaid .edgePath .path {
+[data-md-color-scheme="slate"] .md-typeset .mermaid .edgePath .path {
     stroke: var(--dracula-pin) !important;
 }
 
@@ -87,24 +142,31 @@ body {
     align-items: center;
 }
 
-/* Home page buttons Dracula style */
-.home-buttons .md-button--primary {
-    background-color: var(--dracula-pur) !important;
-    border-color: var(--dracula-pur) !important;
-    color: var(--dracula-bg) !important;
+/* Footer & Visitor Counter Styling */
+.md-footer-meta {
+    padding: 1.5rem 0;
 }
 
-.home-buttons .md-button {
-    border-color: var(--dracula-pin) !important;
-    color: var(--dracula-pin) !important;
-}
-
-.home-buttons .md-button:hover {
-    background-color: var(--dracula-cur) !important;
-    opacity: 0.9;
-}
-
-/* Hide 'Made with Material for MkDocs' footer */
 .md-copyright {
-    display: none;
+    display: block !important;
+    text-align: center;
+    visibility: hidden;
+    font-size: 0 !important;
+}
+
+.md-copyright__highlight {
+    visibility: visible;
+    font-size: 0.5rem !important;
+    opacity: 0.8;
+}
+
+.md-copyright img {
+    margin-top: 0.5rem;
+    height: 18px;
+    border-radius: 2px;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.md-copyright img:hover {
+    transform: scale(1.05);
 }

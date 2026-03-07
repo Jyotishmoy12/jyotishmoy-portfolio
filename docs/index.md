@@ -13,6 +13,6 @@ I am a Full Stack Engineer specialized in building scalable, high-performance sy
 ---
 
 <div class="home-buttons" markdown>
-[View My Experience](experience.md){ .md-button .md-button--primary } 
+[View My Experience](experience.md){ .md-button } 
 [View My Projects](projects.md){ .md-button }
 </div>

@@ -7,13 +7,21 @@ theme:
   name: material
   favicon: material/robot-outline
   palette:
-    # Dracula is dark by default, but we'll stick to a single slate scheme
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to Dracula Mode
     - scheme: slate
       primary: custom
       accent: custom
       toggle:
         icon: material/brightness-4
-        name: Dracula Mode
+        name: Switch to Light Mode
+  font:
+    text: JetBrains Mono
+    code: JetBrains Mono
   features:
     - navigation.tabs
     - navigation.indexes
@@ -66,7 +74,10 @@ nav:
       - Overview: research.md
       - Constrained LCS & LCStr: constrained-lcs-paper.md
       - LCS & LCStr Algorithm: lcs-paper.md
-  - Skills & Education: skills.md
+copyright: |
+  &copy; 2026 Jyotishmoy Deka. 
+  <br>
+  <img src="https://hits.dwyl.com/Jyotishmoy12/jyotishmoy-portfolio.svg?style=flat-square&show=unique&color=bd93f9" alt="Unique Visitors">
 
 extra_css:
   - stylesheets/extra.css
