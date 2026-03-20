@@ -43,3 +43,13 @@ A high-performance DNS resolver that performs true iterative resolution from the
 [Read Case Study](../go-dns/){ .md-button }
 
 ---
+
+## Go-Browser Engine
+
+**Golang** | Browser Engine Built From Scratch
+
+A fully functional web browser engine in Go — raw TCP/TLS networking, hand-written HTML parser, DOM, CSS styling, box-model layout, JavaScript execution (via otto), and native desktop rendering with Ebitengine. No `net/http`. No browser framework.
+
+[Read Case Study](../go-browser/){ .md-button }
+
+---

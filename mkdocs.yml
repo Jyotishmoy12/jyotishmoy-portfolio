@@ -66,6 +66,7 @@ nav:
           - Go-LSM: go-lsm.md
           - Go-SMTP Server: go-smtp.md
           - Go-DNS Server: go-dns.md
+          - Go-Browser Engine: go-browser.md
   - Blogs:
       - Overview: blogs.md
       - HTTP Message Structure: http-structure.md
@@ -73,6 +74,7 @@ nav:
       - Cookies Deep-Dive: cookies-deep-dive.md
       - OAuth 2.0 Deep-Dive: oauth-deep-dive.md
       - Inside the .torrent File: torrent-file-structure.md
+      - Building a Recursive Descent HTML Parser in Go: go-browser-html-parser.md
   - Research:
       - Overview: research.md
       - Constrained LCS & LCStr: constrained-lcs-paper.md

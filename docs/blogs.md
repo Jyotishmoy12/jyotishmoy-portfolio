@@ -51,3 +51,13 @@ Understanding the "Open Authorization" standard—how access tokens, refresh tok
 Exploring the internal structure of a `.torrent` file and the **Bencode** format—how tiny files manage massive datasets through cryptographic fingerprints and metadata.
 
 [Read Technical Deep-Dive](torrent-file-structure.md){ .md-button }
+
+---
+
+## Building a Recursive Descent HTML Parser in Go
+
+**Technical Deep-Dive** | Browser Internals
+
+A deep-dive into how a raw HTML string becomes a live DOM tree — character-by-character tokenization, recursive descent parsing, the grammar that makes it all work, and why the call stack IS the parse tree.
+
+[Read Technical Deep-Dive](go-browser-html-parser.md){ .md-button }
