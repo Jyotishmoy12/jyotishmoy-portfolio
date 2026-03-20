@@ -2,7 +2,7 @@
 
 **Technical Deep-Dive** | Browser Internals | March 2026
 
-Every browser you've ever used has one. You've never had to think about it. This is the story of building one from scratch.
+Your browser just parsed this page. Here's exactly how that works — and how I built the same thing from scratch in Go.
 
 ---
 
