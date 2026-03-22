@@ -48,6 +48,43 @@
 
 ***
 
+## Freelance
+
+### Web Developer (Freelance)
+**Dec 2024 – Mar 2025**
+
+#### [CraftHub by PranabiBaruah](https://www.pranabibaruah.in/)
+- Developed a fully functional art & craft / course-selling website with secure Firebase user authentication.
+- Integrated Razorpay for seamless transactions and automated real-time WhatsApp notifications to admin.
+- Optimized website performance by efficiently managing product images using **Cloudinary AI**.
+- Embedded course-related videos using the **YouTube iframe API**, enhancing user experience.
+- Implemented an intuitive admin dashboard for product listings, course management, and order tracking.
+
+*Tech Stack:* `Firebase` `Razorpay` `Cloudinary AI` `YouTube API`
+
+---
+
+#### [Ekicker](https://www.ekicker.in/)
+- Developed a comprehensive e-commerce platform for electronics components, integrating R&D and career sections with secure Firebase-based user authentication.
+- Integrated Razorpay for seamless payments and set up automated payment notifications to administrators via **EmailJS**.
+- Optimized product image and PDF management using **Cloudinary AI**, ensuring peak website performance.
+- Implemented an intuitive admin dashboard for managing product listings and R&D content.
+
+*Tech Stack:* `Firebase` `Razorpay` `EmailJS` `Cloudinary AI`
+
+***
+
+## Tax Hummer
+
+### Founding Engineer (Full-time)
+**Feb 2025 – Mar 2025 | Hybrid, Guwahati, Assam**
+
+- Led tech development at Tax Hummer to simplify tax filing for individuals and businesses.
+- Expanded into GST compliance, e-invoicing, and financial services to enhance offerings.
+- Engineered a seamless web platform that increased user engagement by **40%** and improved accessibility.
+
+---
+
 ## Indian Institute of Technology, Guwahati (EEE Dept)
 
 ### Project Internship

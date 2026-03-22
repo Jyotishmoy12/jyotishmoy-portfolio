@@ -20,6 +20,3 @@ A comprehensive overview of my technical projects, categorized by primary techno
     </div>
 </div>
 
----
-
-[Back to Home](../index.md){ .md-button }
