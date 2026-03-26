@@ -18,5 +18,13 @@ A comprehensive overview of my technical projects, categorized by primary techno
         <p>High-performance systems, network protocols, and storage engines built with Golang.</p>
         <a href="../go-projects/" class="md-button md-button--primary">View Go Projects</a>
     </div>
+
+    <hr>
+
+    <div class="project-category">
+        <h3>C++ & Systems Programming</h3>
+        <p>Low-level systems, developer tools, and performance-critical applications built with C++.</p>
+        <a href="../cpp-projects/" class="md-button md-button--primary">View C++ Projects</a>
+    </div>
 </div>
 
