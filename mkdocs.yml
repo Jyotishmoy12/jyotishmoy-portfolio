@@ -70,6 +70,9 @@ nav:
       - C++ Projects:
           - Overview: cpp-projects.md
           - VCC - Version Control: vcc.md
+      - Python Projects:
+          - Overview: python-projects.md
+          - Observer AI Reviewer: observer.md
   - Blogs:
       - Overview: blogs.md
       - HTTP Message Structure: http-structure.md

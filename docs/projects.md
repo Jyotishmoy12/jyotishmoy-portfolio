@@ -26,5 +26,13 @@ A comprehensive overview of my technical projects, categorized by primary techno
         <p>Low-level systems, developer tools, and performance-critical applications built with C++.</p>
         <a href="../cpp-projects/" class="md-button md-button--primary">View C++ Projects</a>
     </div>
+
+    <hr>
+
+    <div class="project-category">
+        <h3>Python & Automation</h3>
+        <p>Backend services, automation bots, and data processing systems built with Python.</p>
+        <a href="../python-projects/" class="md-button md-button--primary">View Python Projects</a>
+    </div>
 </div>
 
