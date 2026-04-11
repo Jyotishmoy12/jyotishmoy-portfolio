@@ -10,8 +10,8 @@ I am reading this book chapter-by-chapter, distilling complex concepts into arch
 
 ### Part I: Foundations of Data Systems
 - [x] Chapter 1: Reliable, Scalable, and Maintainable Applications (Completed)
-- [/] Chapter 2: Data Models and Query Languages (Reading...)
-- [ ] **Chapter 3**: Storage and Retrieval (Related: [Go-LSM](go-lsm.md))
+- [x] Chapter 2: Data Models and Query Languages (Completed)
+- [/] Chapter 3: Storage and Retrieval (Reading...)
 - [ ] **Chapter 4**: Encoding and Evolution
 
 ### Part II: Distributed Data
