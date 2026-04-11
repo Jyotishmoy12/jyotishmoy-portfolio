@@ -105,6 +105,26 @@ These choices are the "access paths," but they are managed **automatically** by 
 - **Imperative**: Tells the computer *how* to perform operations in a specific order (e.g., iterating through a list).
 - **Declarative (SQL)**: Describes *what* data is needed, but not the implementation details.
 
+#### Example: Finding all animals of species "Sharks"
+
+**Imperative Approach (JavaScript)**
+```javascript
+function getSharks(animals) {
+    let sharks = [];
+    for (let i = 0; i < animals.length; i++) {
+        if (animals[i].species === "Sharks") {
+            sharks.push(animals[i]);
+        }
+    }
+    return sharks;
+}
+```
+
+**Declarative Approach (SQL)**
+```sql
+SELECT * FROM animals WHERE species = 'Sharks';
+```
+
 ### Why Declarative is Better:
 1.  **Optimization**: The database can optimize the execution path behind the scenes (e.g., reclaiming disk space without breaking queries).
 2.  **Parallelism**: Declarative languages are much easier to execute in parallel because they don't specify a rigid order of operations.
