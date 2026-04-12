@@ -5,6 +5,7 @@ site_description: "Portfolio of Jyotishmoy Deka, a Full Stack Engineer."
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: material/robot-outline
   palette:
     - scheme: default
@@ -30,6 +31,13 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+
+extra:
+  giscus:
+    repo: Jyotishmoy12/jyotishmoy-portfolio
+    repo_id: R_kgDORgLJ7w
+    category: General
+    category_id: DIC_kwDORgLJ784C6rTO
 
 markdown_extensions:
   - admonition
@@ -100,6 +108,7 @@ extra_javascript:
   - javascripts/terminal.js
   - javascripts/spotlight.js
   - javascripts/flow-visualizer.js
+  - javascripts/giscus-handler.js
 
 extra_css:
   - stylesheets/extra.css

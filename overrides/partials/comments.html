@@ -1,0 +1,34 @@
+{% set overview_pages = [
+  "index",
+  "experience",
+  "projects",
+  "javascript-projects",
+  "go-projects",
+  "cpp-projects",
+  "python-projects",
+  "ddia-index",
+  "blogs",
+  "research",
+  "skills"
+] %}
+
+{% if page.file.name not in overview_pages and page.meta.comments != false %}
+  <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
+  <div id="giscus-container">
+    <script src="https://giscus.app/client.js"
+            data-repo="{{ config.extra.giscus.repo }}"
+            data-repo-id="{{ config.extra.giscus.repo_id }}"
+            data-category="{{ config.extra.giscus.category }}"
+            data-category-id="{{ config.extra.giscus.category_id }}"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+{% endif %}
