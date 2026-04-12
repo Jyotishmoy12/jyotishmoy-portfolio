@@ -103,4 +103,4 @@ The fleet generates high-fidelity reports like the example below:
 
 ---
 
-[Back to Projects Hub](../projects/){ .md-button }
+[Back to Projects Hub](projects.md){ .md-button }

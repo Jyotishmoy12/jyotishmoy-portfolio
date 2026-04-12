@@ -8,7 +8,7 @@ Your browser just parsed this page. Here's exactly how that works — and how I 
 
 ## Why Build Your Own HTML Parser?
 
-When I built my [Go Browser Engine](../go-browser/), I had a choice: use a third-party HTML parsing library, or build one from scratch.
+When I built my [Go Browser Engine](go-browser.md), I had a choice: use a third-party HTML parsing library, or build one from scratch.
 
 I chose scratch.
 
@@ -493,5 +493,5 @@ go test ./internal/parser/...
 
 ---
 
-[← Back to Blogs](../blogs/){ .md-button }
-[View Go Browser Engine](../go-browser/){ .md-button }
+[← Back to Blogs](blogs.md){ .md-button }
+[View Go Browser Engine](go-browser.md){ .md-button }

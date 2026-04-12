@@ -327,4 +327,4 @@ go-browser/
 
 ---
 
-[← Back to Go Projects](../go-projects/){ .md-button }
+[← Back to Go Projects](go-projects.md){ .md-button }
