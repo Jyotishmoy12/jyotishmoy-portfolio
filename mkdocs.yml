@@ -86,6 +86,7 @@ nav:
       - "Part I: Foundations":
           - "1. Foundations of Data Systems": ddia-ch1.md
           - "2. Data Models and Query Languages": ddia-ch2.md
+          - "3. Storage and Retrieval": ddia-ch3.md
   - Blogs:
       - Overview: blogs.md
       - HTTP Message Structure: http-structure.md

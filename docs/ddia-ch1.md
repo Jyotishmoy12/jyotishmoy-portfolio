@@ -6,7 +6,7 @@ The first chapter of *Designing Data-Intensive Applications* explores the fundam
 
 ---
 
-## The Three Core Pillars
+## I. The Three Core Pillars
 
 Modern software systems generally prioritize three main concerns:
 
@@ -16,7 +16,7 @@ Modern software systems generally prioritize three main concerns:
 
 ---
 
-## Reliability: Expecting the Unexpected
+## II. Reliability: Expecting the Unexpected
 
 Reliability is about building **fault-tolerant** systems. A system is reliable if it performs as expected, tolerates user mistakes, handles expected load, and prevents abuse.
 
@@ -39,7 +39,7 @@ Reliability is about building **fault-tolerant** systems. A system is reliable i
 
 ---
 
-## Scalability: Handling Growth
+## III. Scalability: Handling Growth
 
 Scalability is not a "yes/no" property; it's about asking: *"If the system grows in a particular way, what are our options for coping with the growth?"*
 
@@ -60,6 +60,11 @@ graph TD
     UserRead -->|JOIN| TweetsTable
     TweetsTable -->|Filter by Followees| Result[Sorted Timeline]
 ```
+- `UserRead --> FollowersTable`: UserRead triggers a relational JOIN on the Followers Table to identify followees.
+
+- `UserRead --> TweetsTable`: UserRead triggers a relational JOIN on the Tweets Table to fetch relevant content.
+
+- `TweetsTable --> Result`: The Tweets Table result is filtered by followee IDs to produce the final Sorted Timeline.
 - **Pros**: Simple write.
 - **Cons**: Extremely slow at read-time as load increased.
 
@@ -74,6 +79,13 @@ graph LR
     
     UserRead((User Reads)) --> Cache
 ```
+- `PostTweet --> FanOut`: User Posts Tweet initiates a request to the Fan-out Service.
+
+- `FanOut --> DB`: The Fan-out Service performs a lookup in the Follower DB to identify the audience.
+
+- `FanOut --> Cache`: The Fan-out Service pushes the tweet directly to the Redis Caches of each follower.
+
+- `UserRead --> Cache`: User Reads fetches the pre-computed timeline instantly from the Follower Redis Caches.
 - **Pros**: Read is extremely fast (just a KV lookup).
 - **Cons**: "Writes" become multiple cache updates. A celebrity with 10M followers causes 10M writes.
 
@@ -82,7 +94,7 @@ Today, Twitter uses a hybrid: approach 2 for most users, but for "celebrities" w
 
 ---
 
-## Latency and Response Time
+## IV. Latency and Response Time
 
 While often used interchangeably, they are distinct:
 
@@ -97,7 +109,7 @@ Mean (average) response times are often misleading because they don't show outli
 
 ---
 
-## Coping with Load
+## V. Coping with Load
 
 ### Vertical vs. Horizontal Scaling
 - **Scaling Up (Vertical)**: Moving to a more powerful machine (more CPU/RAM).
@@ -109,20 +121,20 @@ Mean (average) response times are often misleading because they don't show outli
 
 ---
 
-## Maintainability: The Long Game
+## VI. Maintainability: The Long Game
 
 We should design software to avoid creating "legacy" systems from the start.
 
-### 1. Operability
+### i. Operability
 Making life easy for the operations team by:
 - Monitoring system health.
 - Tracking down the cause of performance degradation.
 - Keeping security patches up-to-date.
 
-### 2. Simplicity (Managing Complexity)
+### ii. Simplicity (Managing Complexity)
 Complexity leads to tight coupling and tangled dependencies. We combat this using **Abstractions** that hide implementation details behind clean APIs.
 
-### 3. Evolvability
+### iii. Evolvability
 ---
 *Last Updated: April 09, 2026*
 

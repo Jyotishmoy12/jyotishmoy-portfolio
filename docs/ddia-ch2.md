@@ -4,7 +4,7 @@ Data models are perhaps the most important part of developing software because t
 
 ---
 
-## Relational Model vs. Document Model
+## I. Relational Model vs. Document Model
 
 The **Relational Data Model**, introduced by Edgar Codd in 1970, organizes data into tables (relations) made up of rows (tuples). It originated from business data processing needs in the 1960s–70s, such as banking, reservations, and payroll systems.
 
@@ -19,7 +19,7 @@ In contrast, the **Document Model** (and NoSQL) emerged in the 2010s to challeng
 
 ---
 
-## The Advantages of Using IDs
+## II. The Advantages of Using IDs
 
 Whether you store an ID or a text string is a question of **duplication**. 
 
@@ -37,10 +37,17 @@ graph LR
     UserRecord -.->|Still Points To| DeptTable
     end
 ```
+- `UserRecord --> DeptTable`: User Record references a department via a numeric `dept_id` instead of a literal string.
+
+- `DeptTable --> DeptName`: The Department Table maps the numeric ID to the human-readable department name.
+
+- `DeptName --> NewName`: Updating the label in the Department Table (e.g., to "Social Impact") propagates to all records without changing the User Record.
+
+- `UserRecord --> DeptTable (Stable)`: The User Record remains stable as it still points to the same invariant ID in the Department Table.
 
 ---
 
-## Are Document Databases Repeating History?
+## III. Are Document Databases Repeating History?
 
 In the 1970s, IBM’s **Information Management System (IMS)** used the **Hierarchical Model**, which is remarkably similar to the JSON model used by document databases today.
 
@@ -58,10 +65,17 @@ graph TD
     Positions --> Pos2[Manager]
     Education --> Edu1[University]
 ```
+- `Root --> Positions`: The Root User Profile serves as the parent for nested Work Positions.
+
+- `Root --> Education`: Education History is similarly nested as a sub-document of the user profile.
+
+- `Positions --> JobRoles`: Specific job roles (Engineer, Manager) are leaf nodes within the Work Positions branch.
+
+- `Education --> Institution`: Specific institutions are leaf nodes within the Education History branch.
 
 ---
 
-## The Network Model (CODASYL)
+## IV. The Network Model (CODASYL)
 
 The Network Model was standardized by CODASYL. It allowed a record to have **multiple parents**, enabling many-to-one and many-to-many relationships.
 
@@ -74,7 +88,7 @@ Unlike foreign keys, links in the network model were like **pointers** stored on
 
 ---
 
-## The Relational Solution
+## V. The Relational Solution
 
 The relational model simplified everything by laying data out in the open: a table is simply a collection of rows. There are no labyrinthine nested structures or complicated manual access paths.
 
@@ -87,7 +101,7 @@ These choices are the "access paths," but they are managed **automatically** by 
 
 ---
 
-## Schema Flexibility
+## VI. Schema Flexibility
 
 | Concept | Schema-on-write (Relational) | Schema-on-read (Document) |
 |---------|-----------------------------|---------------------------|
@@ -100,7 +114,7 @@ These choices are the "access paths," but they are managed **automatically** by 
 
 ---
 
-## Declarative vs. Imperative Query Languages
+## VII. Declarative vs. Imperative Query Languages
 
 - **Imperative**: Tells the computer *how* to perform operations in a specific order (e.g., iterating through a list).
 - **Declarative (SQL)**: Describes *what* data is needed, but not the implementation details.
@@ -131,7 +145,7 @@ SELECT * FROM animals WHERE species = 'Sharks';
 
 ---
 
-## Graph-like Data Models
+## VIII. Graph-like Data Models
 
 When many-to-many relationships become the core of your data, the **Graph Model** is the most natural choice. A graph consists of **Vertices** (Nodes) and **Edges** (Relationships).
 
@@ -160,7 +174,7 @@ CREATE
 
 ---
 
-## Comparison: Graph Databases vs. Network Model
+## IX. Comparison: Graph Databases vs. Network Model
 
 | Feature | CODASYL (Network Model) | Graph Databases |
 |---------|-------------------------|-----------------|
