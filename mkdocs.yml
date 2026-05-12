@@ -81,12 +81,16 @@ nav:
       - Python Projects:
           - Overview: python-projects.md
           - Observer AI Reviewer: observer.md
-  - System Design (DDIA):
-      - Overview: ddia-index.md
-      - "Part I: Foundations":
-          - "1. Foundations of Data Systems": ddia-ch1.md
-          - "2. Data Models and Query Languages": ddia-ch2.md
-          - "3. Storage and Retrieval": ddia-ch3.md
+  - Books:
+      - System Design (DDIA):
+          - Overview: ddia-index.md
+          - "Part I: Foundations":
+              - "1. Foundations of Data Systems": ddia-ch1.md
+              - "2. Data Models and Query Languages": ddia-ch2.md
+              - "3. Storage and Retrieval": ddia-ch3.md
+      - Operating Systems (OSTEP):
+          - Overview: ostep-index.md
+          - "Introduction to Operating Systems": ostep-ch2.md
   - Blogs:
       - Overview: blogs.md
       - HTTP Message Structure: http-structure.md
