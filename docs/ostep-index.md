@@ -12,7 +12,7 @@ I am studying this book to understand how hardware and software collaborate to m
 - [x] **Chapter 2**: Introduction to Operating Systems
 
 ### Part I: Virtualization
-- [ ] **Chapter 4**: The Abstraction: The Process
+- [x] **Chapter 4**: The Abstraction: The Process
 - [ ] **Chapter 5**: Interlude: Process API
 - [ ] **Chapter 6**: Mechanism: Limited Direct Execution
 - [ ] **Chapter 7**: Scheduling: Introduction

@@ -53,7 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "ddia-ch1.md": "ddia-ch1/",
         "ddia-ch2.md": "ddia-ch2/",
         "ddia-ch3.md": "ddia-ch3/",
-        "ostep-ch2.md": "ostep-ch2/"
+        "ostep-ch2.md": "ostep-ch2/",
+        "ostep-ch4.md": "ostep-ch4/"
     };
 
     const commands = {
@@ -69,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
         python: "Path: /home/jyotishmoy/projects/python/\n- <a href='python-projects/' class='terminal-link'>./overview.md</a>\n- <a href='observer/' class='terminal-link'>./observer.md</a>",
         books: "Path: /home/jyotishmoy/books/\n- <a href='ddia-index/' class='terminal-link'>./ddia/</a>\n- <a href='ostep-index/' class='terminal-link'>./ostep/</a>",
         ddia: "Path: /home/jyotishmoy/books/ddia/\n- <a href='ddia-index/' class='terminal-link'>./overview.md</a>\n- <a href='ddia-ch1/' class='terminal-link'>./ddia-ch1.md</a>\n- <a href='ddia-ch2/' class='terminal-link'>./ddia-ch2.md</a>\n- <a href='ddia-ch3/' class='terminal-link'>./ddia-ch3.md</a>",
-        ostep: "Path: /home/jyotishmoy/books/ostep/\n- <a href='ostep-index/' class='terminal-link'>./overview.md</a>\n- <a href='ostep-ch2/' class='terminal-link'>./introduction-to-os.md</a>",
+        ostep: "Path: /home/jyotishmoy/books/ostep/\n- <a href='ostep-index/' class='terminal-link'>./overview.md</a>\n- <a href='ostep-ch2/' class='terminal-link'>./introduction-to-os.md</a>\n- <a href='ostep-ch4/' class='terminal-link'>./the-process.md</a>",
         blogs: "Path: /home/jyotishmoy/blogs/\n- <a href='blogs/' class='terminal-link'>./all-posts.md</a>\n- <a href='http-structure/' class='terminal-link'>./http-message-structure.md</a>\n- <a href='cdn-deep-dive/' class='terminal-link'>./cdn-deep-dive.md</a>\n- <a href='cookies-deep-dive/' class='terminal-link'>./cookies-deep-dive.md</a>\n- <a href='oauth-deep-dive/' class='terminal-link'>./oauth-2.0-deep-dive.md</a>\n- <a href='torrent-file-structure/' class='terminal-link'>./inside-the-torrent-file.md</a>\n- <a href='go-browser-html-parser/' class='terminal-link'>./go-browser-html-parser.md</a>",
         research: "Path: /home/jyotishmoy/research/\n- <a href='research/' class='terminal-link'>./research-overview.md</a>\n- <a href='constrained-lcs-paper/' class='terminal-link'>./constrained-lcs-paper.md</a>\n- <a href='lcs-paper/' class='terminal-link'>./lcs-paper.md</a>",
         contact: "Email: <a href='mailto:jyotishmoydeka62@gmail.com' class='terminal-link'>jyotishmoydeka62@gmail.com</a>\nLinkedIn: <a href='https://linkedin.com/in/jyotishmoy-deka-6871b9229/' target='_blank' class='terminal-link'>/external/linkedin</a>\nGitHub: <a href='https://github.com/Jyotishmoy12' target='_blank' class='terminal-link'>/external/github</a>",
