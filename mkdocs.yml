@@ -93,6 +93,7 @@ nav:
           - "Introduction to Operating Systems": ostep-ch2.md
           - "Part I: Virtualization":
               - "4. The Abstraction: The Process": ostep-ch4.md
+              - "5. Interlude: Process API": ostep-ch5.md
   - Blogs:
       - Overview: blogs.md
       - HTTP Message Structure: http-structure.md
