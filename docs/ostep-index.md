@@ -58,7 +58,7 @@ Theory is solidified through code. Here are the "Pieces" I'm building along the 
 
 | Chapter | Concept | Project / Implementation |
 |---------|---------|-------------------------|
-| Ch 5 | Process API | *Planned: Minimal Shell* |
+| Ch 5 | Process API | [WOMM-Sh: Minimal Shell (mysh)](womm-sh.md) |
 | Ch 28 | Locking | *Planned: User-level Mutex* |
 | Ch 40 | File Systems | *Planned: Toy File System* |
 

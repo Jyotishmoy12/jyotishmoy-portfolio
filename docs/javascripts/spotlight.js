@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Go-LSM", category: "Go Project", url: "../go-lsm/" },
         { title: "Go-SMTP Server", category: "Go Project", url: "../go-smtp/" },
         { title: "Go-DNS Server", category: "Go Project", url: "../go-dns/" },
+        { title: "WOMM-Sh - Minimal Shell", category: "C/C++ Project", url: "../womm-sh/" },
+        { title: "VCC - Version Control", category: "C/C++ Project", url: "../vcc/" },
         // Blog Posts
         { title: "HTTP Message Structure", category: "Blog", url: "../http-structure/" },
         { title: "CDN Deep Dive", category: "Blog", url: "../cdn-deep-dive/" },

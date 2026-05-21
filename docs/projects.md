@@ -22,9 +22,9 @@ A comprehensive overview of my technical projects, categorized by primary techno
     <hr>
 
     <div class="project-category">
-        <h3>C++ & Systems Programming</h3>
-        <p>Low-level systems, developer tools, and performance-critical applications built with C++.</p>
-        <a href="../cpp-projects/" class="md-button md-button--primary">View C++ Projects</a>
+        <h3>C/C++ & Systems Programming</h3>
+        <p>Low-level systems, developer tools, and performance-critical applications built with C and C++.</p>
+        <a href="../cpp-projects/" class="md-button md-button--primary">View C/C++ Projects</a>
     </div>
 
     <hr>

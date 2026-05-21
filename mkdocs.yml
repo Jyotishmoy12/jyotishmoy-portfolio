@@ -75,8 +75,9 @@ nav:
           - Go-SMTP Server: go-smtp.md
           - Go-DNS Server: go-dns.md
           - Go-Browser Engine: go-browser.md
-      - C++ Projects:
+      - C/C++ Projects:
           - Overview: cpp-projects.md
+          - WOMM-Sh - Minimal Shell: womm-sh.md
           - VCC - Version Control: vcc.md
       - Python Projects:
           - Overview: python-projects.md
