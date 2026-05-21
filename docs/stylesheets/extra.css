@@ -31,6 +31,8 @@
 
 :root {
     --md-typeset-font-size: 0.45rem;
+    /* Inline/code font — match readable body text (monospace looks smaller at same px) */
+    --md-code-font-size: 0.65rem;
 }
 
 body {
@@ -78,11 +80,27 @@ h3 {
     font-size: 0.38rem !important;
 }
 
-.md-typeset code {
-    font-size: 0.38rem !important;
+/* Tables: keep cell text full size (Material shrinks tables by default) */
+.md-typeset table:not([class]) {
+    font-size: var(--md-typeset-font-size) !important;
 }
 
-/* Code blocks can feel very large */
+/* Inline code — same visual weight as body text */
+.md-typeset code {
+    font-size: var(--md-code-font-size) !important;
+}
+
+.md-typeset p code,
+.md-typeset li code,
+.md-typeset td code,
+.md-typeset th code,
+.md-typeset table code {
+    font-size: var(--md-code-font-size) !important;
+}
+
+.md-typeset pre > code {
+    font-size: var(--md-code-font-size) !important;
+}
 
 /* Base Styles - Material handles background based on palette */
 /* body {
