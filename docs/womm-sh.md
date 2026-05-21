@@ -12,8 +12,6 @@
 
 **mysh** implements a classic read–eval–print loop: print `mysh> `, read a line with `getline(3)`, parse into an `argv`-style token array, execute via built-ins or `fork` + `execvp`, and repeat until `exit` or EOF. The design is intentionally small — no job control, pipes, background jobs, or custom line editing.
 
-Full module-level notes and additional diagrams live in the repo at [`docs/TECHNICAL.md`](https://github.com/Jyotishmoy12/WOMM-Sh/blob/main/docs/TECHNICAL.md).
-
 ---
 
 ## Features
