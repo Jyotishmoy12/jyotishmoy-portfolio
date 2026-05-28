@@ -229,19 +229,116 @@ The same tag can appear multiple times and is decoded as a list.
 
 ### Protocol Buffers: Byte-Level Mini Lab
 
-For the same product data, Protobuf wire bytes (varint + length-delimited encoding) can look like:
+Protobuf on the wire looks different from Thrift. Before the interactive lab, here is the mental model.
+
+#### How Protobuf differs from Thrift (one sentence)
+
+- **Thrift BinaryProtocol** sends: `[type byte] + [field id] + [value]` (field names never appear; type and id are separate bytes).
+- **Protobuf** sends: `[tag byte] + [value]` where the **tag byte** already encodes both **which field** and **how to read the value**.
+
+So in Protobuf you do not see a separate “string type” byte like Thrift’s `0b`. You infer meaning from the **wire type** embedded in the tag.
+
+#### What is a “tag” byte?
+
+Each field in the binary stream starts with one tag byte built from your `.proto` schema:
+
+```text
+tag = (field_number << 3) | wire_type
+```
+
+| Piece | Meaning |
+|-------|---------|
+| **field_number** | The number you wrote in `.proto` (`= 1`, `= 2`, `= 3`) — same idea as Thrift field id |
+| **wire_type** | Tells the parser **how many bytes to read next** and **how to interpret them** |
+
+**Example:** tag `08` (hex) = decimal `8` = binary `0000 1000`
+
+- Lower 3 bits (`000`) → **wire type 0** (varint)
+- Upper bits (`00001`) → **field 1**
+
+So `08` means: “Field 1 is next, and its value is encoded as a varint.”
+
+#### What is a “wire type”?
+
+Wire type is **not** “int vs string” in the Thrift sense. It is **the encoding shape on the wire**:
+
+| Wire type | Name | How the parser reads the value |
+|-----------|------|--------------------------------|
+| **0** | Varint | Read 1+ bytes until a varint ends; decode as integer/bool/enum |
+| **1** | 64-bit | Read exactly 8 bytes (fixed64) |
+| **2** | Length-delimited | Read a varint **length**, then read that many raw bytes (strings, bytes, embedded messages) |
+| **5** | 32-bit | Read exactly 4 bytes (fixed32) |
+
+Your schema (`.proto`) still says `int32`, `string`, `bool` — the **wire type** only tells the parser the **byte pattern** to consume. The generated code then maps that to the correct Go/Java/C++ type.
+
+#### What is a varint?
+
+A **varint** (variable-length integer) uses 1–10 bytes for an integer:
+
+- Each byte uses **7 bits** for data.
+- The **high bit** (`0x80`) means “more bytes follow.”
+- Small numbers use fewer bytes (efficient on the wire).
+
+**Why `256` becomes `80 02` (not `00 00 01 00` like Thrift):**
+
+- `256` needs more than 7 bits.
+- First chunk: `0x80 | 0` → `80` (continuation + low 7 bits).
+- Second chunk: `2` → `02`.
+- Decoder: `(0 & 0x7F) + (2 << 7) = 256`.
+
+Booleans in Protobuf are often wire type 0 with value `01` (true) or `00` (false) — still a varint, not a single dedicated bool byte like Thrift’s `02` type + `01`.
+
+#### How strings work (wire type 2)
+
+For `string name = 2`:
+
+1. Tag byte: field `2`, wire type `2` → hex **`12`** (because `(2 << 3) | 2 = 18` = `0x12`).
+2. **Length** as varint: `03` = “next 3 bytes are payload.”
+3. **Payload**: raw UTF-8 bytes `43 75 70` = `"Cup"`.
+
+No separate “string type” byte — only **tag + length + bytes**.
+
+#### Our example schema → wire layout
+
+```proto
+message Product {
+  int32 productId = 1;   // varint  -> tag 08, then varint value
+  string name = 2;       // string  -> tag 12, then length + bytes
+  bool inStock = 3;      // bool    -> tag 18, then 01 or 00
+}
+```
+
+```mermaid
+flowchart LR
+    subgraph stream [Protobuf byte stream]
+        T1[08 tag field1 varint]
+        V1[80 02 value 256]
+        T2[12 tag field2 length-delimited]
+        L2[03 length]
+        S2[43 75 70 Cup]
+        T3[18 tag field3 varint]
+        V3[01 true]
+    end
+    T1 --> V1 --> T2 --> L2 --> S2 --> T3 --> V3
+```
+
+Full payload for `{ productId: 256, name: "Cup", inStock: true }`:
 
 ```text
 08 80 02 12 03 43 75 70 18 01
 ```
 
-Where:
-- `08` = field 1, wire type 0 (varint)
-- `80 02` = 256 in varint form
-- `12` = field 2, wire type 2 (length-delimited)
-- `03` + `43 75 70` = length 3 + `Cup`
-- `18` = field 3, wire type 0 (varint)
-- `01` = `true`
+| Bytes | Meaning |
+|-------|---------|
+| `08` | Field **1**, wire type **0** (varint) → `productId` |
+| `80 02` | Varint value **256** |
+| `12` | Field **2**, wire type **2** (length-delimited) → `name` |
+| `03` | Length **3** |
+| `43 75 70` | UTF-8 **"Cup"** |
+| `18` | Field **3**, wire type **0** (varint) → `inStock` |
+| `01` | **true** |
+
+Use the explorer below to step through each group with highlighting.
 
 <div class="thrift-mini-game"
      data-bytes="08 80 02 12 03 43 75 70 18 01"
