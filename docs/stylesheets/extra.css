@@ -606,3 +606,76 @@ h3 {
     margin-top: 0.4rem;
     margin-bottom: 0.5rem;
 }
+
+/* Thrift BinaryProtocol mini game */
+.thrift-mini-game {
+    background: rgba(40, 42, 54, 0.5);
+    border: 1px solid #44475a;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0 1.6rem 0;
+}
+
+.thrift-game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.thrift-progress {
+    color: #6272a4;
+    font-size: 0.5rem;
+}
+
+.thrift-bytes-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.8rem;
+}
+
+.thrift-byte-chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.55rem;
+    padding: 0.2rem 0.35rem;
+    border-radius: 5px;
+    border: 1px solid #44475a;
+    background: #282a36;
+    color: #f8f8f2;
+    transition: all 0.2s ease;
+}
+
+.thrift-byte-chip.dimmed {
+    opacity: 0.45;
+}
+
+.thrift-byte-chip.active {
+    border-color: #bd93f9;
+    background: rgba(189, 147, 249, 0.2);
+    box-shadow: 0 0 8px rgba(189, 147, 249, 0.25);
+    opacity: 1;
+}
+
+.thrift-step-panel {
+    border-left: 3px solid #6272a4;
+    padding-left: 0.6rem;
+    margin-bottom: 0.9rem;
+}
+
+.thrift-step-label {
+    color: #f1fa8c;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.thrift-step-explain {
+    color: #f8f8f2;
+}
+
+.thrift-controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}

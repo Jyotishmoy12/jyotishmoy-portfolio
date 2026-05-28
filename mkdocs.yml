@@ -89,6 +89,7 @@ nav:
               - "1. Foundations of Data Systems": ddia-ch1.md
               - "2. Data Models and Query Languages": ddia-ch2.md
               - "3. Storage and Retrieval": ddia-ch3.md
+              - "4. Encoding and Evolution": ddia-ch4.md
       - Operating Systems (OSTEP):
           - Overview: ostep-index.md
           - "Introduction to Operating Systems": ostep-ch2.md
@@ -118,6 +119,7 @@ extra_javascript:
   - javascripts/spotlight.js
   - javascripts/flow-visualizer.js
   - javascripts/giscus-handler.js
+  - javascripts/thrift-game.js
 
 extra_css:
   - stylesheets/extra.css

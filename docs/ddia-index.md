@@ -12,7 +12,7 @@ I am reading this book chapter-by-chapter, distilling complex concepts into arch
 - [x] Chapter 1: Reliable, Scalable, and Maintainable Applications (Completed)
 - [x] Chapter 2: Data Models and Query Languages (Completed)
 - [x] **Chapter 3**: Storage and Retrieval (Implementation: [Go-LSM](go-lsm.md))
-- [ ] **Chapter 4**: Encoding and Evolution
+- [x] **Chapter 4**: Encoding and Evolution (Completed)
 
 ### Part II: Distributed Data
 - [ ] **Chapter 5**: Replication
@@ -35,6 +35,7 @@ Theory is great, but code is better. Here are the projects I've built (or am bui
 | Chapter | Concept | Project / Implementation |
 |---------|---------|-------------------------|
 | Ch 3 | LSM-Trees | [Go-LSM: A Persistent KV Store](go-lsm.md) |
+| Ch 4 | Encoding & Evolution | [ThriftBinaryProtocol](https://github.com/Jyotishmoy12/ThriftBinaryProtocol) |
 | Ch 5 | Replication | *Planned: Distributed KV Store* |
 | Ch 11 | Stream Processing | *Planned: Real-time Analytics Engine* |
 
