@@ -96,6 +96,7 @@ nav:
           - "Part I: Virtualization":
               - "4. The Abstraction: The Process": ostep-ch4.md
               - "5. Interlude: Process API": ostep-ch5.md
+              - "6. Mechanism: Limited Direct Execution": ostep-ch6.md
   - Blogs:
       - Overview: blogs.md
       - HTTP Message Structure: http-structure.md

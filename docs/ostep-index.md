@@ -14,7 +14,7 @@ I am studying this book to understand how hardware and software collaborate to m
 ### Part I: Virtualization
 - [x] **Chapter 4**: The Abstraction: The Process
 - [x] **Chapter 5**: Interlude: Process API
-- [ ] **Chapter 6**: Mechanism: Limited Direct Execution
+- [x] **Chapter 6**: Mechanism: Limited Direct Execution
 - [ ] **Chapter 7**: Scheduling: Introduction
 - [ ] **Chapter 8**: Scheduling: The Multi-Level Feedback Queue
 - [ ] **Chapter 9**: Scheduling: Proportional Share
