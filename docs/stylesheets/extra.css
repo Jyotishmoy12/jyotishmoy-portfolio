@@ -115,16 +115,9 @@ h3 {
     background-color: #191a21 !important;
 }
 
-/* Fix Mermaid node text for Dracula */
+/* Keep flowchart node labels readable against the Dracula cyan node fill. */
 [data-md-color-scheme="slate"] .md-typeset .mermaid .node .label,
-[data-md-color-scheme="slate"] .md-typeset .mermaid .actor,
-[data-md-color-scheme="slate"] .md-typeset .mermaid .messageText,
-[data-md-color-scheme="slate"] .md-typeset .mermaid .noteText,
-[data-md-color-scheme="slate"] .md-typeset .mermaid .labelText,
-[data-md-color-scheme="slate"] .md-typeset .mermaid .loopText,
-[data-md-color-scheme="slate"] .md-typeset .mermaid .edgeLabel,
-[data-md-color-scheme="slate"] .md-typeset .mermaid text,
-[data-md-color-scheme="slate"] .md-typeset .mermaid tspan {
+[data-md-color-scheme="slate"] .md-typeset .mermaid .nodeLabel {
     color: var(--dracula-bg) !important;
     fill: var(--dracula-bg) !important;
     font-weight: 600;

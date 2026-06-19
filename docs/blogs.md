@@ -61,3 +61,13 @@ Exploring the internal structure of a `.torrent` file and the **Bencode** format
 A deep-dive into how a raw HTML string becomes a live DOM tree — character-by-character tokenization, recursive descent parsing, the grammar that makes it all work, and why the call stack IS the parse tree.
 
 [Read Technical Deep-Dive](go-browser-html-parser.md){ .md-button }
+
+---
+
+## QUIC Deep-Dive: The Transport Protocol Behind HTTP/3
+
+**Technical Deep-Dive** | Transport Protocols
+
+Exploring how QUIC combines TLS 1.3, independent streams, connection migration, QPACK, and anti-amplification defenses to power HTTP/3.
+
+[Read Technical Deep-Dive](quic-deep-dive.md){ .md-button }
