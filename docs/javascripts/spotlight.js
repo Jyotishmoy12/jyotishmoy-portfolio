@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Cookies Deep Dive", category: "Blog", url: "../cookies-deep-dive/" },
         { title: "OAuth 2.0 Deep Dive", category: "Blog", url: "../oauth-deep-dive/" },
         { title: "Inside the Torrent File", category: "Blog", url: "../torrent-file-structure/" },
+        { title: "QUIC Deep Dive", category: "Blog", url: "../quic-deep-dive/" },
+        { title: "Quorums in Distributed Systems", category: "Blog", url: "../quorums-distributed-systems/" },
         // Research
         { title: "LCS & LCStr Algo", category: "Research", url: "../lcs-paper/" },
         { title: "Constrained LCS", category: "Research", url: "../constrained-lcs-paper/" }

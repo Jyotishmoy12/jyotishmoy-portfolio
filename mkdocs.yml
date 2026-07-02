@@ -106,6 +106,7 @@ nav:
       - Inside the .torrent File: torrent-file-structure.md
       - Building a Recursive Descent HTML Parser in Go: go-browser-html-parser.md
       - QUIC Deep-Dive: quic-deep-dive.md
+      - Quorums in Distributed Systems: quorums-distributed-systems.md
   - Research:
       - Overview: research.md
       - Constrained LCS & LCStr: constrained-lcs-paper.md

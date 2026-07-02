@@ -71,3 +71,13 @@ A deep-dive into how a raw HTML string becomes a live DOM tree — character-by-
 Exploring how QUIC combines TLS 1.3, independent streams, connection migration, QPACK, and anti-amplification defenses to power HTTP/3.
 
 [Read Technical Deep-Dive](quic-deep-dive.md){ .md-button }
+
+---
+
+## What Are Quorums in Distributed Systems?
+
+**Technical Deep-Dive** | Distributed Systems
+
+Understanding how majority quorums prevent split-brain, why `R + W > N` matters, and what tradeoffs quorum-based systems make.
+
+[Read Technical Deep-Dive](quorums-distributed-systems.md){ .md-button }
