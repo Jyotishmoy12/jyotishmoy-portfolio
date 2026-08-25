@@ -90,6 +90,7 @@ nav:
               - "2. Data Models and Query Languages": ddia-ch2.md
               - "3. Storage and Retrieval": ddia-ch3.md
               - "4. Encoding and Evolution": ddia-ch4.md
+              - "5. Replication": ddia-ch5.md
       - Operating Systems (OSTEP):
           - Overview: ostep-index.md
           - "Introduction to Operating Systems": ostep-ch2.md

@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Inside the Torrent File", category: "Blog", url: "../torrent-file-structure/" },
         { title: "QUIC Deep Dive", category: "Blog", url: "../quic-deep-dive/" },
         { title: "Quorums in Distributed Systems", category: "Blog", url: "../quorums-distributed-systems/" },
+        // Books
+        { title: "DDIA Chapter 5: Replication", category: "Book Notes", url: "../ddia-ch5/" },
         // Research
         { title: "LCS & LCStr Algo", category: "Research", url: "../lcs-paper/" },
         { title: "Constrained LCS", category: "Research", url: "../constrained-lcs-paper/" }

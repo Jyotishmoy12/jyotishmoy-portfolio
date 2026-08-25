@@ -13,9 +13,9 @@ I am reading this book chapter-by-chapter, distilling complex concepts into arch
 - [x] Chapter 2: Data Models and Query Languages (Completed)
 - [x] **Chapter 3**: Storage and Retrieval (Implementation: [Go-LSM](go-lsm.md))
 - [x] **Chapter 4**: Encoding and Evolution (Completed)
+- [x] **Chapter 5**: Replication (Completed)
 
 ### Part II: Distributed Data
-- [ ] **Chapter 5**: Replication
 - [ ] **Chapter 6**: Partitioning
 - [ ] **Chapter 7**: Transactions
 - [ ] **Chapter 8**: The Trouble with Distributed Systems
