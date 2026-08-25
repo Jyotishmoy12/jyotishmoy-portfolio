@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
     const searchData = [
         // Projects
-        { title: "LeetCode Backend System", category: "Javascript Project", url: "../leetcode-backend/" },
-        { title: "Airbnb Booking System", category: "Javascript Project", url: "../airbnb-clone/" },
-        { title: "Airline Booking System", category: "Javascript Project", url: "../airline-booking/" },
-        { title: "Go-Torrent", category: "Go Project", url: "../go-torrent/" },
-        { title: "Go-LSM", category: "Go Project", url: "../go-lsm/" },
-        { title: "Go-SMTP Server", category: "Go Project", url: "../go-smtp/" },
-        { title: "Go-DNS Server", category: "Go Project", url: "../go-dns/" },
-        { title: "WOMM-Sh - Minimal Shell", category: "C/C++ Project", url: "../womm-sh/" },
-        { title: "VCC - Version Control", category: "C/C++ Project", url: "../vcc/" },
+        { title: "LeetCode Backend System", category: "Javascript Project", url: "/leetcode-backend/" },
+        { title: "Airbnb Booking System", category: "Javascript Project", url: "/airbnb-clone/" },
+        { title: "Airline Booking System", category: "Javascript Project", url: "/airline-booking/" },
+        { title: "Go-Torrent", category: "Go Project", url: "/go-torrent/" },
+        { title: "Go-LSM", category: "Go Project", url: "/go-lsm/" },
+        { title: "Go-SMTP Server", category: "Go Project", url: "/go-smtp/" },
+        { title: "Go-DNS Server", category: "Go Project", url: "/go-dns/" },
+        { title: "WOMM-Sh - Minimal Shell", category: "C/C++ Project", url: "/womm-sh/" },
+        { title: "VCC - Version Control", category: "C/C++ Project", url: "/vcc/" },
         // Blog Posts
-        { title: "HTTP Message Structure", category: "Blog", url: "../http-structure/" },
-        { title: "CDN Deep Dive", category: "Blog", url: "../cdn-deep-dive/" },
-        { title: "Cookies Deep Dive", category: "Blog", url: "../cookies-deep-dive/" },
-        { title: "OAuth 2.0 Deep Dive", category: "Blog", url: "../oauth-deep-dive/" },
-        { title: "Inside the Torrent File", category: "Blog", url: "../torrent-file-structure/" },
-        { title: "QUIC Deep Dive", category: "Blog", url: "../quic-deep-dive/" },
-        { title: "Quorums in Distributed Systems", category: "Blog", url: "../quorums-distributed-systems/" },
+        { title: "HTTP Message Structure", category: "Blog", url: "/http-structure/" },
+        { title: "CDN Deep Dive", category: "Blog", url: "/cdn-deep-dive/" },
+        { title: "Cookies Deep Dive", category: "Blog", url: "/cookies-deep-dive/" },
+        { title: "OAuth 2.0 Deep Dive", category: "Blog", url: "/oauth-deep-dive/" },
+        { title: "Inside the Torrent File", category: "Blog", url: "/torrent-file-structure/" },
+        { title: "QUIC Deep Dive", category: "Blog", url: "/quic-deep-dive/" },
+        { title: "Quorums in Distributed Systems", category: "Blog", url: "/quorums-distributed-systems/" },
         // Books
-        { title: "DDIA Chapter 5: Replication", category: "Book Notes", url: "../ddia-ch5/" },
+        { title: "DDIA Chapter 5: Replication", category: "Book Notes", url: "/ddia-ch5/" },
         // Research
-        { title: "LCS & LCStr Algo", category: "Research", url: "../lcs-paper/" },
-        { title: "Constrained LCS", category: "Research", url: "../constrained-lcs-paper/" }
+        { title: "LCS & LCStr Algo", category: "Research", url: "/lcs-paper/" },
+        { title: "Constrained LCS", category: "Research", url: "/constrained-lcs-paper/" }
     ];
 
     // Create Modal HTML

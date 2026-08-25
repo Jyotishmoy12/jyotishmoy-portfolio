@@ -89,6 +89,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
+    function toRootPath(path) {
+        return path.startsWith("/") ? path : `/${path}`;
+    }
+
+    function normalizeInternalLinks(html) {
+        return html.replace(/href='(?!https?:|mailto:|\/)([^']+)'/g, "href='/$1'");
+    }
+
     function typeWriter(text, i, targetElement, currentBuffer = "", fn) {
         if (i < text.length) {
             let char = text.charAt(i);
@@ -110,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 i++;
             }
 
-            targetElement.innerHTML = currentBuffer;
+            targetElement.innerHTML = normalizeInternalLinks(currentBuffer);
             setTimeout(() => typeWriter(text, i, targetElement, currentBuffer, fn), 5);
         } else if (fn) {
             fn();
@@ -142,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (fileMap[cleanCmd]) {
             const msg = `Redirecting to ${cleanCmd}...`;
             typeWriter(msg, 0, responseWrapper, "", () => {
-                window.location.href = fileMap[cleanCmd];
+                window.location.href = toRootPath(fileMap[cleanCmd]);
             });
         } else if (lowerCmd !== "") {
             const errorLine = document.createElement("div");
