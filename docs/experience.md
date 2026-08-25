@@ -5,6 +5,18 @@
 ### Full Stack Engineer (Fulltime)
 **Nov 2025 – Present | Hybrid**
 
+#### Sales Portal
+- Built the full frontend, architecting company, manager, and rep portals for onboarding, coaching, and retention.
+- Integrated Claude (Haiku/Sonnet) to score sales call transcripts and generate structured "Film Room" coaching breakdowns.
+- Implemented Clerk authentication across multi-role portals for secure company, manager, and rep access.
+- Built an email-based transcript ingestion flow, auto-triggering LLM scoring into the Film Room on account creation.
+- Contributed to backend services powering scoring pipelines and 30/60/90-day training plan generation.
+- Built battle cards and objection libraries for smoother real-time rep coaching.
+
+*Tech Stack:* `Next.js` `TypeScript` `TanStack Query` `Zod` `Clerk` `FastAPI` `PostgreSQL` `Claude Haiku/Sonnet`
+
+---
+
 #### AI Browser Extension
 - Built a Chrome extension to automate CRM workflows, reducing manual data entry by **40%** with **165+** active users.
 - Integrated **Google Gemini AI** to process natural language commands directly within the browser.
