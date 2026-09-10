@@ -8,19 +8,9 @@ Welcome to my blog! Here, I share technical deep-dives, engineering insights, an
 
 **Technical Deep-Dive** | Protocol Internals
 
-A detailed exploration of the HTTP message format, CRLF sequences, start-lines, and header fields—modeled after RFC 9112 and RFC 9110.
+A detailed exploration of the HTTP message format, CRLF sequences, start-lines, and header fields — modeled after RFC 9112 and RFC 9110.
 
 [Read Technical Deep-Dive](http-structure.md){ .md-button }
-
----
-
-## CDN Deep-Dive
-
-**Technical Deep-Dive** | Distributed Systems
-
-Exploring the invisible backbone of the high-speed web—how Content Delivery Networks (CDNs) handle global traffic, routing, and caching.
-
-[Read Technical Deep-Dive](cdn-deep-dive.md){ .md-button }
 
 ---
 
@@ -28,7 +18,7 @@ Exploring the invisible backbone of the high-speed web—how Content Delivery Ne
 
 **Technical Deep-Dive** | Web Protocols
 
-Unwrapping the world of cookies—how small data files enable personalization, manage sessions, and secure the web.
+Unwrapping the world of cookies — how small data files enable personalization, manage sessions, and secure the web.
 
 [Read Technical Deep-Dive](cookies-deep-dive.md){ .md-button }
 
@@ -38,7 +28,7 @@ Unwrapping the world of cookies—how small data files enable personalization, m
 
 **Technical Deep-Dive** | Security & Auth
 
-Understanding the "Open Authorization" standard—how access tokens, refresh tokens, and different grant types enable secure delegated access.
+Understanding the "Open Authorization" standard — how access tokens, refresh tokens, and different grant types enable secure delegated access.
 
 [Read Technical Deep-Dive](oauth-deep-dive.md){ .md-button }
 
@@ -48,7 +38,7 @@ Understanding the "Open Authorization" standard—how access tokens, refresh tok
 
 **Technical Deep-Dive** | Network Protocols
 
-Exploring the internal structure of a `.torrent` file and the **Bencode** format—how tiny files manage massive datasets through cryptographic fingerprints and metadata.
+Exploring the internal structure of a `.torrent` file and the **Bencode** format — how tiny files manage massive datasets through cryptographic fingerprints and metadata.
 
 [Read Technical Deep-Dive](torrent-file-structure.md){ .md-button }
 
@@ -81,3 +71,13 @@ Exploring how QUIC combines TLS 1.3, independent streams, connection migration, 
 Understanding how majority quorums prevent split-brain, why `R + W > N` matters, and what tradeoffs quorum-based systems make.
 
 [Read Technical Deep-Dive](quorums-distributed-systems.md){ .md-button }
+
+---
+
+## CDN Deep-Dive: The Invisible Backbone of the High-Speed Web
+
+**Technical Deep-Dive** | Distributed Systems
+
+Understanding how Content Delivery Networks route users to nearby edge servers, cache content, manage traffic, and improve performance, reliability, and security.
+
+[Read Technical Deep-Dive](cdn-deep-dive.md){ .md-button }
