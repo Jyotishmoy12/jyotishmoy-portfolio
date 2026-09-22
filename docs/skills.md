@@ -18,7 +18,7 @@ I am a continuous learner with a broad technical foundation, ranging from low-le
 
 ### Tools & Infrastructure
 - **Cloud**: AWS (EC2, S3, Lambda), Firebase
-- **DevOps**: Docker, Git, GitHub Actions, GitLab CI/CD
+- **DevOps**: Docker, Terraform, Git, GitHub Actions, GitLab CI/CD
 - **Monitoring**: Prometheus, Grafana
 
 ### Databases & Caching

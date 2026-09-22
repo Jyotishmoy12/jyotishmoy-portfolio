@@ -60,6 +60,18 @@
 
 ***
 
+## MOD (Merch on Demand)
+
+### Software Engineer (Contract)
+**Jun 2026 – Aug 2026 | Remote, Canada**
+
+- Built end-to-end brand and fan account creation flows across frontend, backend, and authentication.
+- Built artist submission and brand-owner verification flows for artwork review and approval.
+- Built campaign workflows that enabled brands to create campaigns and artists to submit artwork.
+- Resolved backend and infrastructure issues across services deployed on a Hostinger VPS.
+
+---
+
 ## Freelance
 
 ### Web Developer (Freelance)
