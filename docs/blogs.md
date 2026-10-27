@@ -14,6 +14,16 @@ A detailed exploration of the HTTP message format, CRLF sequences, start-lines, 
 
 ---
 
+## Connection Management in HTTP/1.x
+
+**Technical Deep-Dive** | Web Protocols
+
+How short-lived connections, keep-alive, and HTTP pipelining work, with sequence diagrams and a hands-on Python, curl, and browser experiment to observe TCP connection reuse.
+
+[Read Technical Deep-Dive](http-connection-management.md){ .md-button }
+
+---
+
 ## Cookies Deep-Dive
 
 **Technical Deep-Dive** | Web Protocols

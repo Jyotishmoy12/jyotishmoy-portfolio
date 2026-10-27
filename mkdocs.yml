@@ -101,6 +101,7 @@ nav:
   - Blogs:
       - Overview: blogs.md
       - HTTP Message Structure: http-structure.md
+      - Connection Management in HTTP/1.x: http-connection-management.md
       - CDN Deep-Dive: cdn-deep-dive.md
       - Cookies Deep-Dive: cookies-deep-dive.md
       - OAuth 2.0 Deep-Dive: oauth-deep-dive.md
